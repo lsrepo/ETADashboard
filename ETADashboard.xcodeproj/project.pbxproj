@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185B27FC8B792E6C0F0EBB3F /* Pods_ETAExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADB66209EC95584FA9AA718 /* Pods_ETAExtension.framework */; };
+		273B18431EA2141900F6F45A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273B18421EA2141900F6F45A /* NotificationCenter.framework */; };
+		273B18491EA2141900F6F45A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273B18471EA2141900F6F45A /* MainInterface.storyboard */; };
+		273B184D1EA2141900F6F45A /* ETAExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 273B18411EA2141900F6F45A /* ETAExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27518E271EA2161400CF3B0B /* KMBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED5B6D1EA0C2C9007E8DC2 /* KMBHelper.swift */; };
+		27518E281EA2161400CF3B0B /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED5B6B1EA0B32B007E8DC2 /* ETA.swift */; };
+		27518E291EA2161400CF3B0B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27552FB91EA077F8008393F6 /* NetworkHelper.swift */; };
+		27552FA81EA07518008393F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27552FA71EA07518008393F6 /* AppDelegate.swift */; };
+		27552FAA1EA07518008393F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27552FA91EA07518008393F6 /* ViewController.swift */; };
+		27552FAD1EA07518008393F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27552FAB1EA07518008393F6 /* Main.storyboard */; };
+		27552FAF1EA07518008393F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27552FAE1EA07518008393F6 /* Assets.xcassets */; };
+		27552FB21EA07518008393F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27552FB01EA07518008393F6 /* LaunchScreen.storyboard */; };
+		27552FBA1EA077F8008393F6 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27552FB91EA077F8008393F6 /* NetworkHelper.swift */; };
+		27A4C3271EA21C9D0026614F /* ETAExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B18451EA2141900F6F45A /* ETAExtensionViewController.swift */; };
+		27ED5B6C1EA0B32B007E8DC2 /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED5B6B1EA0B32B007E8DC2 /* ETA.swift */; };
+		27ED5B6E1EA0C2C9007E8DC2 /* KMBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED5B6D1EA0C2C9007E8DC2 /* KMBHelper.swift */; };
+		F6CE5C6095A9B54BD8457203 /* Pods_ETADashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE354BE32293FF070468B6F /* Pods_ETADashboard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		273B184B1EA2141900F6F45A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27552F9C1EA07518008393F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273B18401EA2141900F6F45A;
+			remoteInfo = ETAExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		273B18511EA2141900F6F45A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				273B184D1EA2141900F6F45A /* ETAExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05A48094517B05996E24966D /* Pods-ETADashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETADashboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETADashboard/Pods-ETADashboard.debug.xcconfig"; sourceTree = "<group>"; };
+		0DC1131FA9836E383336A3DA /* Pods-ETADashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETADashboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETADashboard/Pods-ETADashboard.release.xcconfig"; sourceTree = "<group>"; };
+		273B18411EA2141900F6F45A /* ETAExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ETAExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		273B18421EA2141900F6F45A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		273B18451EA2141900F6F45A /* ETAExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETAExtensionViewController.swift; sourceTree = "<group>"; };
+		273B18481EA2141900F6F45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		273B184A1EA2141900F6F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27552FA41EA07518008393F6 /* ETADashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETADashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27552FA71EA07518008393F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27552FA91EA07518008393F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27552FAC1EA07518008393F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27552FAE1EA07518008393F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27552FB11EA07518008393F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27552FB31EA07518008393F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27552FB91EA077F8008393F6 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkHelper.swift; path = ../ETADashboard/NetworkHelper.swift; sourceTree = "<group>"; };
+		27ED5B6B1EA0B32B007E8DC2 /* ETA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ETA.swift; path = ../ETADashboard/ETA.swift; sourceTree = "<group>"; };
+		27ED5B6D1EA0C2C9007E8DC2 /* KMBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KMBHelper.swift; path = ../ETADashboard/KMBHelper.swift; sourceTree = "<group>"; };
+		2ADB66209EC95584FA9AA718 /* Pods_ETAExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETAExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF249EEB7047D6C933D19EA /* Pods-ETAExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETAExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETAExtension/Pods-ETAExtension.release.xcconfig"; sourceTree = "<group>"; };
+		B59DD5C639980817BA1D41AE /* Pods-ETAExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETAExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETAExtension/Pods-ETAExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		CFE354BE32293FF070468B6F /* Pods_ETADashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETADashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		273B183E1EA2141900F6F45A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273B18431EA2141900F6F45A /* NotificationCenter.framework in Frameworks */,
+				185B27FC8B792E6C0F0EBB3F /* Pods_ETAExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27552FA11EA07518008393F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6CE5C6095A9B54BD8457203 /* Pods_ETADashboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		273B18441EA2141900F6F45A /* ETAExtension */ = {
+			isa = PBXGroup;
+			children = (
+				273B18451EA2141900F6F45A /* ETAExtensionViewController.swift */,
+				27ED5B6D1EA0C2C9007E8DC2 /* KMBHelper.swift */,
+				27ED5B6B1EA0B32B007E8DC2 /* ETA.swift */,
+				27552FB91EA077F8008393F6 /* NetworkHelper.swift */,
+				273B18471EA2141900F6F45A /* MainInterface.storyboard */,
+				273B184A1EA2141900F6F45A /* Info.plist */,
+			);
+			path = ETAExtension;
+			sourceTree = "<group>";
+		};
+		27552F9B1EA07518008393F6 = {
+			isa = PBXGroup;
+			children = (
+				27552FA61EA07518008393F6 /* ETADashboard */,
+				273B18441EA2141900F6F45A /* ETAExtension */,
+				27552FA51EA07518008393F6 /* Products */,
+				D96889E823BFD0844C7C01A1 /* Pods */,
+				B9BEAEF7C05B07BC9761C22C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27552FA51EA07518008393F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27552FA41EA07518008393F6 /* ETADashboard.app */,
+				273B18411EA2141900F6F45A /* ETAExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27552FA61EA07518008393F6 /* ETADashboard */ = {
+			isa = PBXGroup;
+			children = (
+				27552FA71EA07518008393F6 /* AppDelegate.swift */,
+				27552FA91EA07518008393F6 /* ViewController.swift */,
+				27552FAB1EA07518008393F6 /* Main.storyboard */,
+				27552FAE1EA07518008393F6 /* Assets.xcassets */,
+				27552FB01EA07518008393F6 /* LaunchScreen.storyboard */,
+				27552FB31EA07518008393F6 /* Info.plist */,
+			);
+			path = ETADashboard;
+			sourceTree = "<group>";
+		};
+		B9BEAEF7C05B07BC9761C22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFE354BE32293FF070468B6F /* Pods_ETADashboard.framework */,
+				273B18421EA2141900F6F45A /* NotificationCenter.framework */,
+				2ADB66209EC95584FA9AA718 /* Pods_ETAExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96889E823BFD0844C7C01A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05A48094517B05996E24966D /* Pods-ETADashboard.debug.xcconfig */,
+				0DC1131FA9836E383336A3DA /* Pods-ETADashboard.release.xcconfig */,
+				B59DD5C639980817BA1D41AE /* Pods-ETAExtension.debug.xcconfig */,
+				6DF249EEB7047D6C933D19EA /* Pods-ETAExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		273B18401EA2141900F6F45A /* ETAExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273B18501EA2141900F6F45A /* Build configuration list for PBXNativeTarget "ETAExtension" */;
+			buildPhases = (
+				36410447030BDC5A241BAB3A /* [CP] Check Pods Manifest.lock */,
+				273B183D1EA2141900F6F45A /* Sources */,
+				273B183E1EA2141900F6F45A /* Frameworks */,
+				273B183F1EA2141900F6F45A /* Resources */,
+				CE24C0BACD3B939E4328E6C6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETAExtension;
+			productName = ETAExtension;
+			productReference = 273B18411EA2141900F6F45A /* ETAExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		27552FA31EA07518008393F6 /* ETADashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "ETADashboard" */;
+			buildPhases = (
+				9DCDABD33BCC2A1C5A5268F6 /* [CP] Check Pods Manifest.lock */,
+				27552FA01EA07518008393F6 /* Sources */,
+				27552FA11EA07518008393F6 /* Frameworks */,
+				27552FA21EA07518008393F6 /* Resources */,
+				466C97D9C63C98823FB83B64 /* [CP] Embed Pods Frameworks */,
+				560EEF2448B2AF0F20388BD9 /* [CP] Copy Pods Resources */,
+				273B18511EA2141900F6F45A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				273B184C1EA2141900F6F45A /* PBXTargetDependency */,
+			);
+			name = ETADashboard;
+			productName = ETADashboard;
+			productReference = 27552FA41EA07518008393F6 /* ETADashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27552F9C1EA07518008393F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = pakwlau.com;
+				TargetAttributes = {
+					273B18401EA2141900F6F45A = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = JDFT4SYY26;
+						ProvisioningStyle = Automatic;
+					};
+					27552FA31EA07518008393F6 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = JDFT4SYY26;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 27552F9F1EA07518008393F6 /* Build configuration list for PBXProject "ETADashboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27552F9B1EA07518008393F6;
+			productRefGroup = 27552FA51EA07518008393F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27552FA31EA07518008393F6 /* ETADashboard */,
+				273B18401EA2141900F6F45A /* ETAExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		273B183F1EA2141900F6F45A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273B18491EA2141900F6F45A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27552FA21EA07518008393F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27552FB21EA07518008393F6 /* LaunchScreen.storyboard in Resources */,
+				27552FAF1EA07518008393F6 /* Assets.xcassets in Resources */,
+				27552FAD1EA07518008393F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36410447030BDC5A241BAB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		466C97D9C63C98823FB83B64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ETADashboard/Pods-ETADashboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		560EEF2448B2AF0F20388BD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ETADashboard/Pods-ETADashboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DCDABD33BCC2A1C5A5268F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE24C0BACD3B939E4328E6C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ETAExtension/Pods-ETAExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		273B183D1EA2141900F6F45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A4C3271EA21C9D0026614F /* ETAExtensionViewController.swift in Sources */,
+				27518E271EA2161400CF3B0B /* KMBHelper.swift in Sources */,
+				27518E281EA2161400CF3B0B /* ETA.swift in Sources */,
+				27518E291EA2161400CF3B0B /* NetworkHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27552FA01EA07518008393F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27552FAA1EA07518008393F6 /* ViewController.swift in Sources */,
+				27552FBA1EA077F8008393F6 /* NetworkHelper.swift in Sources */,
+				27ED5B6C1EA0B32B007E8DC2 /* ETA.swift in Sources */,
+				27ED5B6E1EA0C2C9007E8DC2 /* KMBHelper.swift in Sources */,
+				27552FA81EA07518008393F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		273B184C1EA2141900F6F45A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273B18401EA2141900F6F45A /* ETAExtension */;
+			targetProxy = 273B184B1EA2141900F6F45A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		273B18471EA2141900F6F45A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				273B18481EA2141900F6F45A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		27552FAB1EA07518008393F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27552FAC1EA07518008393F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27552FB01EA07518008393F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27552FB11EA07518008393F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		273B184E1EA2141900F6F45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59DD5C639980817BA1D41AE /* Pods-ETAExtension.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				INFOPLIST_FILE = ETAExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pakwlau.com.ETADashboard.ETAExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		273B184F1EA2141900F6F45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF249EEB7047D6C933D19EA /* Pods-ETAExtension.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				INFOPLIST_FILE = ETAExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pakwlau.com.ETADashboard.ETAExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		27552FB41EA07518008393F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27552FB51EA07518008393F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27552FB71EA07518008393F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A48094517B05996E24966D /* Pods-ETADashboard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				INFOPLIST_FILE = ETADashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pakwlau.com.ETADashboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		27552FB81EA07518008393F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC1131FA9836E383336A3DA /* Pods-ETADashboard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				INFOPLIST_FILE = ETADashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pakwlau.com.ETADashboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		273B18501EA2141900F6F45A /* Build configuration list for PBXNativeTarget "ETAExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273B184E1EA2141900F6F45A /* Debug */,
+				273B184F1EA2141900F6F45A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27552F9F1EA07518008393F6 /* Build configuration list for PBXProject "ETADashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27552FB41EA07518008393F6 /* Debug */,
+				27552FB51EA07518008393F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "ETADashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27552FB71EA07518008393F6 /* Debug */,
+				27552FB81EA07518008393F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27552F9C1EA07518008393F6 /* Project object */;
+}
