@@ -36,9 +36,7 @@ struct KMBHelper{
     /// Expect 16:45 as nextBusTime
     static func getTimeDifference(nextBusTime:String) -> Int {
         
-        if nextBusTime == "即將到達" ||  nextBusTime == "快將到達"{
-            return 0
-        }
+     
         var differenceInMinutes:Int = -1
         let nextBusTimeComponents = nextBusTime.components(separatedBy: ":")
         guard (nextBusTimeComponents.count == 2)

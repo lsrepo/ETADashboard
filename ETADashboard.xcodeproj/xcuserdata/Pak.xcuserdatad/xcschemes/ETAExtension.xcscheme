@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27552FA31EA07518008393F6"
-               BuildableName = "ETADashboard.app"
-               BlueprintName = "ETADashboard"
+               BuildableName = "&#x8f49;&#x8eca;&#x66ab;&#x501f;&#x554f;.app"
+               BlueprintName = "&#x8f49;&#x8eca;&#x66ab;&#x501f;&#x554f;"
                ReferencedContainer = "container:ETADashboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -67,16 +67,26 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27552FA31EA07518008393F6"
-            BuildableName = "ETADashboard.app"
-            BlueprintName = "ETADashboard"
+            BlueprintIdentifier = "273B18401EA2141900F6F45A"
+            BuildableName = "ETAExtension.appex"
+            BlueprintName = "ETAExtension"
             ReferencedContainer = "container:ETADashboard.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "273B18401EA2141900F6F45A"
+            BuildableName = "ETAExtension.appex"
+            BlueprintName = "ETAExtension"
+            ReferencedContainer = "container:ETADashboard.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -92,8 +102,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27552FA31EA07518008393F6"
-            BuildableName = "ETADashboard.app"
-            BlueprintName = "ETADashboard"
+            BuildableName = "&#x8f49;&#x8eca;&#x66ab;&#x501f;&#x554f;.app"
+            BlueprintName = "&#x8f49;&#x8eca;&#x66ab;&#x501f;&#x554f;"
             ReferencedContainer = "container:ETADashboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

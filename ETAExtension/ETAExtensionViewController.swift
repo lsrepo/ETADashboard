@@ -25,11 +25,13 @@ class ETAExtensionViewController: UIViewController, NCWidgetProviding {
     
     var nextBusDataSource = NextBusDataSource()
     
+    lazy var labels:[(route:UILabel,ETA:UILabel)] = {
+        return [ (self.firstBusRoute,self.firstBusETA),
+                 (self.secondBusRoute,self.secondBusETA),
+                 (self.thirdBusRoute,self.thirdBusETA) ]
+    }()
+    
     func updateExtensionUI(){
-        let labels:[(route:UILabel,ETA:UILabel)] = [ (firstBusRoute,firstBusETA),
-                                                     (secondBusRoute,secondBusETA),
-                                                     (thirdBusRoute,thirdBusETA) ]
-        
         let nextBusData = nextBusDataSource.data
         
         // Make sure there are enough labels for the data
@@ -41,19 +43,42 @@ class ETAExtensionViewController: UIViewController, NCWidgetProviding {
         // update labels text
         for n in 0..<nextBusData.count {
             labels[n].route.text = String(nextBusData[n].route)
-            labels[n].ETA.text = String(nextBusData[n].ETA) + " mins"
+            
+            // process ETA
+            let eta = nextBusData[n].ETA
+            
+            if eta > 0 {
+                labels[n].ETA.text = String(nextBusData[n].ETA) + " 分鐘"
+            }else if eta == 0{
+                labels[n].ETA.text = "就到啦"
+            }else if eta == -1{
+                labels[n].ETA.text = "-"
+            }
         }
     }
     
+    func emptyLabels(){
+        for label in self.labels {
+            label.route.text = ""
+            label.ETA.text = ""
+        }
+    }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
-        
+//    override func viewDidLoad() {
+//        print("viewDidLoad")
+//        // Prepare UI
+//        emptyLabels()
+//       
+//    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
+        // Prepare UI
+        emptyLabels()
         // from home to ic by 52X
         getAllBusRidesETAfromHometoIC()
-        
     }
+   
     
     func getAllBusRidesETAfromHometoIC(){
         let toKLNby52X = BusRide(bound: .toKLN, route: "52X", startingPoint: .Home)

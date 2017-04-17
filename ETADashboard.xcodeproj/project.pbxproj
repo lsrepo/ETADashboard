@@ -58,7 +58,7 @@
 		273B18451EA2141900F6F45A /* ETAExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETAExtensionViewController.swift; sourceTree = "<group>"; };
 		273B18481EA2141900F6F45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		273B184A1EA2141900F6F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27552FA41EA07518008393F6 /* ETADashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETADashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27552FA41EA07518008393F6 /* 轉車暫借問.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "轉車暫借問.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27552FA71EA07518008393F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27552FA91EA07518008393F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27552FAC1EA07518008393F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		27552FA51EA07518008393F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27552FA41EA07518008393F6 /* ETADashboard.app */,
+				27552FA41EA07518008393F6 /* 轉車暫借問.app */,
 				273B18411EA2141900F6F45A /* ETAExtension.appex */,
 			);
 			name = Products;
@@ -184,9 +184,9 @@
 			productReference = 273B18411EA2141900F6F45A /* ETAExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		27552FA31EA07518008393F6 /* ETADashboard */ = {
+		27552FA31EA07518008393F6 /* 轉車暫借問 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "ETADashboard" */;
+			buildConfigurationList = 27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "轉車暫借問" */;
 			buildPhases = (
 				9DCDABD33BCC2A1C5A5268F6 /* [CP] Check Pods Manifest.lock */,
 				27552FA01EA07518008393F6 /* Sources */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				273B184C1EA2141900F6F45A /* PBXTargetDependency */,
 			);
-			name = ETADashboard;
+			name = "轉車暫借問";
 			productName = ETADashboard;
-			productReference = 27552FA41EA07518008393F6 /* ETADashboard.app */;
+			productReference = 27552FA41EA07518008393F6 /* 轉車暫借問.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27552FA31EA07518008393F6 /* ETADashboard */,
+				27552FA31EA07518008393F6 /* 轉車暫借問 */,
 				273B18401EA2141900F6F45A /* ETAExtension */,
 			);
 		};
@@ -582,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "ETADashboard" */ = {
+		27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "轉車暫借問" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27552FB71EA07518008393F6 /* Debug */,
