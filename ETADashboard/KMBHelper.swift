@@ -27,8 +27,26 @@ struct KMBHelper{
         url += "&servicetype=1"
         
         NetworkHelper.getJson(url: url){ json in
-            let nextBusArrival =  json["data"]["response"][0]["t"].stringValue
-            let timeDifference = getTimeDifference(nextBusTime:nextBusArrival)
+            var jsonData =  json["data"]["response"][0]["t"].stringValue
+
+            // Case: "尾班車已過本站", , and
+            guard jsonData != "尾班車已過本站"  else{
+                print("尾班車已過本站")
+                return
+            }
+            
+            // Case: "23:23　尾班車"
+            if jsonData.contains("尾班車") {
+                let index = jsonData.index(jsonData.startIndex, offsetBy:5)
+                jsonData = jsonData.substring(to: index)
+            }
+            
+            // Case: "13:45"
+            guard jsonData.characters.count == 5 else{
+                return
+            }
+            
+            let timeDifference = getTimeDifference(nextBusTime:jsonData)
             completion(timeDifference)
         }
     }
@@ -36,13 +54,12 @@ struct KMBHelper{
     /// Expect 16:45 as nextBusTime
     static func getTimeDifference(nextBusTime:String) -> Int {
         
-     
         var differenceInMinutes:Int = -1
         let nextBusTimeComponents = nextBusTime.components(separatedBy: ":")
         guard (nextBusTimeComponents.count == 2)
             else{
-                print("Error in separating the next bus time conponents")
-            return -1
+                print("Error in separating the next bus time conponents:",nextBusTime)
+                return -1
         }
         
         let nextBusHour = nextBusTimeComponents.first
@@ -55,9 +72,9 @@ struct KMBHelper{
         let currentMinutes = calendar.component(.minute, from: currentDate)
         
         if let nbh = nextBusHour, let nbm = nextBusMinutes {
-             differenceInMinutes = ( Int(nbh)! - currentHour )*60 + Int(nbm)! - currentMinutes
+            differenceInMinutes = ( Int(nbh)! - currentHour )*60 + Int(nbm)! - currentMinutes
         }
         return differenceInMinutes
     }
-   
+    
 }

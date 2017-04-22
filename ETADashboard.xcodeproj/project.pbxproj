@@ -10,7 +10,7 @@
 		185B27FC8B792E6C0F0EBB3F /* Pods_ETAExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADB66209EC95584FA9AA718 /* Pods_ETAExtension.framework */; };
 		273B18431EA2141900F6F45A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273B18421EA2141900F6F45A /* NotificationCenter.framework */; };
 		273B18491EA2141900F6F45A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273B18471EA2141900F6F45A /* MainInterface.storyboard */; };
-		273B184D1EA2141900F6F45A /* ETAExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 273B18411EA2141900F6F45A /* ETAExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		273B184D1EA2141900F6F45A /* 轉車暫借問.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 273B18411EA2141900F6F45A /* 轉車暫借問.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		27518E271EA2161400CF3B0B /* KMBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED5B6D1EA0C2C9007E8DC2 /* KMBHelper.swift */; };
 		27518E281EA2161400CF3B0B /* ETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED5B6B1EA0B32B007E8DC2 /* ETA.swift */; };
 		27518E291EA2161400CF3B0B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27552FB91EA077F8008393F6 /* NetworkHelper.swift */; };
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				273B184D1EA2141900F6F45A /* ETAExtension.appex in Embed App Extensions */,
+				273B184D1EA2141900F6F45A /* 轉車暫借問.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,12 +53,12 @@
 /* Begin PBXFileReference section */
 		05A48094517B05996E24966D /* Pods-ETADashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETADashboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETADashboard/Pods-ETADashboard.debug.xcconfig"; sourceTree = "<group>"; };
 		0DC1131FA9836E383336A3DA /* Pods-ETADashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETADashboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETADashboard/Pods-ETADashboard.release.xcconfig"; sourceTree = "<group>"; };
-		273B18411EA2141900F6F45A /* ETAExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ETAExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		273B18411EA2141900F6F45A /* 轉車暫借問.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "轉車暫借問.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		273B18421EA2141900F6F45A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		273B18451EA2141900F6F45A /* ETAExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETAExtensionViewController.swift; sourceTree = "<group>"; };
 		273B18481EA2141900F6F45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		273B184A1EA2141900F6F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27552FA41EA07518008393F6 /* 轉車暫借問.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "轉車暫借問.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27552FA41EA07518008393F6 /* Next KMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Next KMB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27552FA71EA07518008393F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27552FA91EA07518008393F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27552FAC1EA07518008393F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 		27552FA51EA07518008393F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27552FA41EA07518008393F6 /* 轉車暫借問.app */,
-				273B18411EA2141900F6F45A /* ETAExtension.appex */,
+				27552FA41EA07518008393F6 /* Next KMB.app */,
+				273B18411EA2141900F6F45A /* 轉車暫借問.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		273B18401EA2141900F6F45A /* ETAExtension */ = {
+		273B18401EA2141900F6F45A /* 轉車暫借問 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 273B18501EA2141900F6F45A /* Build configuration list for PBXNativeTarget "ETAExtension" */;
+			buildConfigurationList = 273B18501EA2141900F6F45A /* Build configuration list for PBXNativeTarget "轉車暫借問" */;
 			buildPhases = (
 				36410447030BDC5A241BAB3A /* [CP] Check Pods Manifest.lock */,
 				273B183D1EA2141900F6F45A /* Sources */,
@@ -179,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = ETAExtension;
+			name = "轉車暫借問";
 			productName = ETAExtension;
-			productReference = 273B18411EA2141900F6F45A /* ETAExtension.appex */;
+			productReference = 273B18411EA2141900F6F45A /* 轉車暫借問.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		27552FA31EA07518008393F6 /* 轉車暫借問 */ = {
+		27552FA31EA07518008393F6 /* Next KMB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "轉車暫借問" */;
+			buildConfigurationList = 27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "Next KMB" */;
 			buildPhases = (
 				9DCDABD33BCC2A1C5A5268F6 /* [CP] Check Pods Manifest.lock */,
 				27552FA01EA07518008393F6 /* Sources */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				273B184C1EA2141900F6F45A /* PBXTargetDependency */,
 			);
-			name = "轉車暫借問";
+			name = "Next KMB";
 			productName = ETADashboard;
-			productReference = 27552FA41EA07518008393F6 /* 轉車暫借問.app */;
+			productReference = 27552FA41EA07518008393F6 /* Next KMB.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -241,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27552FA31EA07518008393F6 /* 轉車暫借問 */,
-				273B18401EA2141900F6F45A /* ETAExtension */,
+				27552FA31EA07518008393F6 /* Next KMB */,
+				273B18401EA2141900F6F45A /* 轉車暫借問 */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +375,7 @@
 /* Begin PBXTargetDependency section */
 		273B184C1EA2141900F6F45A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 273B18401EA2141900F6F45A /* ETAExtension */;
+			target = 273B18401EA2141900F6F45A /* 轉車暫借問 */;
 			targetProxy = 273B184B1EA2141900F6F45A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -564,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		273B18501EA2141900F6F45A /* Build configuration list for PBXNativeTarget "ETAExtension" */ = {
+		273B18501EA2141900F6F45A /* Build configuration list for PBXNativeTarget "轉車暫借問" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273B184E1EA2141900F6F45A /* Debug */,
@@ -582,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "轉車暫借問" */ = {
+		27552FB61EA07518008393F6 /* Build configuration list for PBXNativeTarget "Next KMB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27552FB71EA07518008393F6 /* Debug */,

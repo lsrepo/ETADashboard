@@ -44,6 +44,7 @@ class NextBusDataSource {
 enum Location{
     case Home
     case IC
+    case Work
 }
 
 struct BusRide{
@@ -79,6 +80,8 @@ struct BusRide{
                 default:
                     break;
                 }
+            default:
+                break;
             }
             
         case .toTM:
@@ -87,6 +90,10 @@ struct BusRide{
             case "61M","52X","53":
                 // this is back Home instead
                 return ("TU17-N-1450-0",0)
+            case "62X", "259D":
+                return ("KW16W12850",8)
+            case "258D":
+                return ("KW16W12850",2)
             default:
                 break;
             }
